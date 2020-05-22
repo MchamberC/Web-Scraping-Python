@@ -22,7 +22,7 @@ class inicio(unittest.TestCase):
         contacto = self.driver.find_element_by_xpath('')
         
         
-        #recorrido de pestañas hasta llegar al form 
+        #recorrido de pestañas hasta llegar al formulario 
         seleccionar = ActionChains(self.driver)
         seleccionar.move_to_element(inicio).move_to_element(nosotros).move_to_element(portafolio).move_to_element(contacto).click().perform()
         time.sleep(3)
@@ -49,7 +49,7 @@ class inicio(unittest.TestCase):
         time.sleep(3)
         enviar = self.driver.find_element_by_xpath('')
         enviar.click()
-
+        time.sleep(4)
     
     
     def tearDown(self):
